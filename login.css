@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open-Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient(135deg, #8ac1ef, #ca6ce9, #8ac1ee, #e99356);
+    background-repeat: no-repeat;
+    /* background: linear-gradient(135deg, #8ac1ef, #ca6ce9, #8ac1ee, #e99356); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    width: 60%;
+    height: 60vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.75);
+    box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.75);
+    margin-top: 30px;
+}
+
+/* -------------------left-box------------------------ */
+.left {
+    width: 100%;
+    height: 100%;
+    flex-basis: 60%;
+    background-image: url(login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.left h1 {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 50px 0;
+}
+
+.left p {
+    font-size: 15px;
+    margin-bottom: 50px;
+    line-height: 2;
+
+}
+
+.left label a {
+    background: rgba(124, 0, 240, 0.664);
+    padding: 10px 50px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 100px;
+    color: white;
+}
+
+/* -----------------------right-box---------------------- */
+.right {
+    flex-basis: 40%;
+    margin: 30px 50px;
+
+}
+
+.right-box {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+.heading {
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 30px;
+}
+
+.text-style {
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.login-btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+    left: 50%;
+    margin: 30px 0;
+}
+
+.login-btn:hover {
+    background: rgba(2, 2, 180, 0.432);
+    color: white;
+    border: 0px solid rgba(2, 2, 180, 0.432);
+}
+
+.an-btn {
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.an-btn:hover {
+    background: rgba(2, 2, 180, 0.432);
+    border: 0px solid rgba(2, 2, 180, 0.432);
+    color: white;
+}
+
+#register-box {
+    display: none;
+}
+
+#result-box {
+    display: none;
+}
+
+
+/* --------------------media--------------------- */
+@media (max-width:1130px) {
+    .container {
+        width: 95%;
+       
+    }
+    /* -----------------------left---------------------------------- */
+    .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left h1{
+        font-size: 35px;
+    }
+    .left p {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .left label a {
+        font-size: 13px;
+        padding: 8px 30px;
+        margin: 5px 0;
+        display: inline-block;
+        border-radius: 100px;
+    }
+
+    /* ---------------------------Right----------------------------------- */
+    .heading {
+        font-size: 25px;
+        padding: 30px;
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-style {
+        padding: 5px 15px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        font-size: 11px;
+    }
+    
+    .login-btn {
+        padding: 7px 20px;
+        border-radius: 4px;
+        font-size: 11px;
+        margin: 30px 0;
+    }
+    .an-btn {
+        position: absolute;
+        padding: 5px 15px;
+        border-radius: 4px;
+        font-size: 11px;
+    }
+}
+@media (min-width:400px) and (max-width:768px) {
+    /* -----------------------left---------------------------------- */
+    .container {
+        width: 95%;
+    }
+    .left h1{
+        font-size: 15px;
+    }
+    .left p {
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    .left label a {
+        font-size: 11px;
+        padding: 8px 30px;
+        margin: 5px 0;
+        display: inline-block;
+        border-radius: 100px;
+    }
+
+    /* ---------------------------Right----------------------------------- */
+    .heading {
+        font-size: 20px;
+        padding: 30px;
+    }
+    
+    .text-style {
+        padding: 5px 13px;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+    
+    .login-btn {
+        padding: 5px 15px;
+        border-radius: 4px;
+        font-size: 10px;
+        margin: 30px 0;
+    }
+    .an-btn {
+        position: absolute;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 10px;
+    }
+}
+
